@@ -1,5 +1,6 @@
+
 #root {
-  max-width: 1280px;
+  max-width: full;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -26,9 +27,7 @@ footer {
   text-align: center;
 }
 
-/* Tambahkan ini ke file CSS Anda */
 .markdown-container {
-  max-width: 100%;
   overflow-x: auto;
 }
 
@@ -38,15 +37,26 @@ footer {
   overflow-wrap: break-word;
 }
 
+.form-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-field {
+  margin-bottom: 10px;
+}
+
+
 
 
 
 
 .loader {
   border: 4px solid #f3f3f3;
-  /* Light grey */
   border-top: 4px solid #3498db;
-  /* Blue */
   border-radius: 50%;
   width: 20px;
   height: 20px;
@@ -65,11 +75,8 @@ footer {
 
 typewriter-text {
   white-space: pre-wrap;
-  /* Keeps the spaces and line breaks */
   overflow: hidden;
-  /* Ensures that the text won't overflow */
   border-right: 0.15em solid orange;
-  /* Cursor effect */
   animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
