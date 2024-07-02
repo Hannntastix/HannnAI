@@ -16,11 +16,6 @@ const Navbars = () => {
                 }>
                     Home
                 </Navbar.Link>
-                <Navbar.Link as={Link} to="/explore" active={
-                    location.pathname === "/explore"
-                }>
-                    Explore
-                </Navbar.Link>
             </Navbar.Collapse>
         </Navbar>
     );

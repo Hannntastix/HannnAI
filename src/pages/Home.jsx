@@ -1,5 +1,7 @@
 import React from 'react'
 import Typewriter from '../components/Typewriter'
+import { NavbarLink } from 'flowbite-react'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
     return (
@@ -12,15 +14,10 @@ const Home = () => {
                         <p className='text-gray-200 font-semibold md:text-2xl text-xl py-3 font-serif'>By M.Raihan Athalah Ilham</p>
                         <Typewriter text="Hello, Welcome to HannnAI, a website contains an AI supported by Llama3. You can ask anything to HannnAI by go to explore 
                         page and type your question on the form and click 'Send' Button." />
-                        <div className='w-full bg-gray-400 rounded-md my-5 px-2 py-4 hidden sm:block md:block lg:block xl:block 2xl:block'>
-                            <h3 className='font-bold font-mono text-lg'>There are some updates on HannnAI :</h3>
-                            <ul>
-                                <li className='font-semibold'>// New Voice Command Feature for User</li>
-                                <li className='font-semibold'>// Update Llama Version</li>
-                                <li className='font-semibold'>// Adjusting form size and resize</li>
-                                <li className='font-semibold'>// UI adjusting</li>
-                            </ul>
-                        </div>
+                        <div className='h-7'/>
+                        <Link to="https://hannn-ai.vercel.app/explore" target='blank' className='px-4 py-2 bg-white rounded-full text-lg my-5 hover:bg-zinc-200 transition ease-in-out duration-300'>
+                            <span className='font-semibold'>Try HannnAI</span> &#8599;
+                        </Link>
                     </div>
                     <div className='md:w-3/6 xl:ml-72 lg:ml-36'>
                         <img src="https://images.squarespace-cdn.com/content/v1/563cc987e4b05a2939898c49/1506210816573-OY3PBRXTVKXSQU0U23FP/ke17ZwdGBToddI8pDm48kPnsf5mMwK3KDy1tisBlUmRZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzo4SI7WUt2Kh3mJ9yIXE1J2LwB1WS8XsjNPjOfnyfL5aVyG4ZMghpx64iX7JBzitc/ihealth-AI.gif" className=" md:h-80 md:w-96 rounded-full" alt="AI" />
