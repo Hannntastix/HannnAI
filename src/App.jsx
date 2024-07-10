@@ -12,8 +12,8 @@ function App() {
       <KindeProvider
         clientId="5e42f74859564674b3a2c1f66aa9a164"
         domain="https://hannnai.kinde.com"
-        redirectUri="http://localhost:5173"
-        logoutUri="http://localhost:5173"
+        redirectUri="https://hannn-ai.vercel.app"
+        logoutUri="https://hannn-ai.vercel.app"
       >
         <BrowserRouter>
           <Routes>
