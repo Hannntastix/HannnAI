@@ -115,12 +115,12 @@ const Explore = () => {
     }
 
     return (
-        <main className='flex flex-col justify-center items-center max-w-4xl w-full mx-auto min-h-screen px-4'>
+        <main className='flex flex-col justify-center items-center max-w-4xl w-full mx-auto min-h-screen px-4 arsenal-sc-reguler'>
             <div className='flex flex-col mb-20 gap-3'>
-                <h1 className='font-mono text-6xl text-indigo-500 font-semibold [text-shadow:2px_2px_5px_var(--tw-shadow-color)] shadow-indigo-500'>HannnAI</h1>
-                <p className='text-xl text-gray-400'>Powered By LLama3</p>
+                <h1 className='dancing-script-font text-6xl text-indigo-500 font-semibold [text-shadow:2px_2px_5px_var(--tw-shadow-color)] shadow-indigo-500'>HannnAI</h1>
+                <p className='text-xl text-gray-400 source-code-pro-js-tutorial'>Powered By LLama3</p>
                 <img src="https://static.vecteezy.com/system/resources/previews/000/540/933/original/abstract-beautiful-gradient-background-vector.jpg" alt="" className='rounded-md hover:opacity-80 hover:animate-pulse' />
-                <p className='text-center text-xl text-white mb-5 font-mono'>Illustrated by Raihan</p>
+                <p className='text-center text-xl text-white mb-5 source-code-pro-js-tutorial'>Illustrated by Raihan</p>
                 <Typewriter text="I am HannnAI, now in version 1.5, supported by LLama. As an AI designed to simulate conversations with humans, I have been trained on an even larger and more diverse dataset than before. This extensive training allows me to generate more accurate and human-like responses. My primary purpose is to assist and interact with users like you through text-based conversations, now with enhanced capabilities thanks to the improvements in HannnAI version 1.5." />
             </div>
             <form className='flex flex-col gap-4 py-4 w-full' onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
