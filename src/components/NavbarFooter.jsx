@@ -15,7 +15,7 @@ const NavbarFooter = () => {
                 <div className="flex-grow">
                     <Outlet />
                 </div>
-                <Footers />
+            <Footers />
             </div>
         </>
     );

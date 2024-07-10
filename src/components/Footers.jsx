@@ -4,7 +4,7 @@ const Footers = () => {
     return (
         <>
             <hr />
-            <Footer className="px-5 md:container py-5 border-0 shadow-none overflow-hidden mx-auto bg-black">
+            <Footer className="px-5 md:container py-5 border-0 shadow-none overflow-hidden mx-auto bg-">
                 <Footer.Copyright href="#" by="Hannntastix" year={2024} />
                 <Footer.LinkGroup>
                     <Footer.Link href="https://github.com/Hannntastix">Github</Footer.Link>

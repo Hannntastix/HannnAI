@@ -1,3 +1,44 @@
+.source-code-pro-js-tutorial {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dancing-script-font {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.arsenal-sc-regular {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.arsenal-sc-bold {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.arsenal-sc-regular-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.arsenal-sc-bold-italic {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
 
 #root {
   max-width: full;
@@ -7,7 +48,9 @@
 }
 
 body {
-  background-color: rgb(0, 0, 0);
+  background-image: url('https://wallpaperaccess.com/full/1155023.jpg');
+  background-size: cover;
+  width: 100%;
 }
 
 .main {
@@ -21,9 +64,9 @@ body {
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  padding: 1rem;
+  background-color: none;
+  color: none;
+  padding: 0;
   text-align: center;
 }
 
