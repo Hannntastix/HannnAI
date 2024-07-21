@@ -21,7 +21,7 @@ const Navbars = () => {
                         }>
                             Home
                         </Navbar.Link>
-                        <Navbar.Link target="blank" className="xl:block hidden" href="https://tictactoe-hannnai.vercel.app/" active={
+                        <Navbar.Link target="blank" href="https://tictactoe-hannnai.vercel.app/" active={
                             location.pathname === "https://tictactoe-hannnai.vercel.app/"
                         }>
                             Play Game
