@@ -103,7 +103,7 @@ const Explore = () => {
                 <>
                     {text.slice(0, length)}...
                     <button
-                        className='text-blue-500 underline ml-1 text-sm'
+                        className='text-blue-500 underline ml-1 text-sm select-none pointer-events-none'
                         onClick={() => setExpanded(prev => ({ ...prev, [index]: true }))}
                     >
                         Read more
@@ -117,11 +117,11 @@ const Explore = () => {
     return (
         <main className='flex flex-col justify-center items-center max-w-4xl w-full mx-auto min-h-screen px-4 arsenal-sc-reguler'>
             <div className='flex flex-col mb-20 gap-3'>
-                <h1 className='dancing-script-font text-6xl text-indigo-500 font-semibold [text-shadow:2px_2px_5px_var(--tw-shadow-color)] shadow-indigo-500'>HannnAI</h1>
-                <p className='text-xl text-gray-400 source-code-pro-js-tutorial'>Powered By LLama3</p>
+                <h1 className='select-none pointer-events-none dancing-script-font text-6xl text-indigo-500 font-semibold [text-shadow:2px_2px_5px_var(--tw-shadow-color)] shadow-indigo-500'>HannnAI</h1>
+                <p className='select-none pointer-events-none text-xl text-gray-400 source-code-pro-js-tutorial'>Powered By LLama3</p>
                 <img src="https://static.vecteezy.com/system/resources/previews/000/540/933/original/abstract-beautiful-gradient-background-vector.jpg" alt="" className='rounded-md hover:opacity-80 hover:animate-pulse' />
-                <p className='text-center text-xl text-white mb-5 source-code-pro-js-tutorial'>Illustrated by Raihan</p>
-                <Typewriter text="I am HannnAI, now in version 1.5, supported by LLama. As an AI designed to simulate conversations with humans, I have been trained on an even larger and more diverse dataset than before. This extensive training allows me to generate more accurate and human-like responses. My primary purpose is to assist and interact with users like you through text-based conversations, now with enhanced capabilities thanks to the improvements in HannnAI version 1.5." />
+                <p className='text-center text-xl text-white mb-5 source-code-pro-js-tutorial select-none pointer-events-none'>Illustrated by Raihan</p>
+                <Typewriter text="I am HannnAI, now in version 2.0, supported by LLama. As an AI designed to simulate conversations with humans, I have been trained on an even larger and more diverse dataset than before. This extensive training allows me to generate more accurate and human-like responses. My primary purpose is to assist and interact with users like you through text-based conversations, now with enhanced capabilities thanks to the improvements in HannnAI version 2.0." />
             </div>
             <form className='flex flex-col gap-4 py-4 w-full' onSubmit={(e) => { e.preventDefault(); handleSubmit(); }}>
                 <textarea
@@ -160,10 +160,10 @@ const Explore = () => {
             </div>
             <div className='history-section max-w-4xl w-full mx-auto mt-8 bg-zinc-950 px-4 rounded-md mb-5 py-2'>
                 {history.length === 0 ? (
-                    <h2 className='text-xl text-gray-200 py-4 font-bold'>No Prompt History</h2>
+                    <h2 className='text-xl text-gray-200 py-4 font-bold select-none pointer-events-none'>No Prompt History</h2>
                 ) : (
                     <>
-                        <h2 className='text-2xl font-bold text-gray-200 py-4'>Your Prompt History</h2>
+                        <h2 className='text-2xl font-bold text-gray-200 py-4 select-none pointer-events-none'>Your Prompt History</h2>
                         <div className='w-full h-full bg-zinc-900 rounded-sm px-2 py-1'>
                             <ul className='mt-4'>
                                 {history.map((item, index) => (
@@ -173,7 +173,7 @@ const Explore = () => {
                                             <p className='text-zinc-500 text-left'>{item.date}</p>
                                         </div>
                                         <button
-                                            className='ml-4 bg-red-700 text-white rounded px-2 '
+                                            className='ml-4 bg-red-700 text-white rounded px-2 select-none pointer-events-none'
                                             onClick={() => handleDelete(index)}
                                         >
                                             X
