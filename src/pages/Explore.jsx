@@ -173,7 +173,7 @@ const Explore = () => {
                                             <p className='text-zinc-500 text-left'>{item.date}</p>
                                         </div>
                                         <button
-                                            className='ml-4 bg-red-700 text-white rounded px-2 select-none pointer-events-none'
+                                            className='ml-4 bg-red-700 text-white rounded px-2 select-none'
                                             onClick={() => handleDelete(index)}
                                         >
                                             X
