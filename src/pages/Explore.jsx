@@ -103,7 +103,7 @@ const Explore = () => {
                 <>
                     {text.slice(0, length)}...
                     <button
-                        className='text-blue-500 underline ml-1 text-sm select-none pointer-events-none'
+                        className='text-blue-500 underline ml-1 text-sm select-none'
                         onClick={() => setExpanded(prev => ({ ...prev, [index]: true }))}
                     >
                         Read more
