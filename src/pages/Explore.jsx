@@ -131,9 +131,10 @@ const Explore = () => {
                     rows='3'
                     onKeyPress={handleKeyPress}
                 />
+                <div className='mx-auto grid grid-cols-1 xl:grid-cols-2 w-full h-auto gap-5'>
                 <button
                     type='button'
-                    className='bg-indigo-500 rounded-md py-2 px-4 font-bold text-white flex justify-center items-center'
+                    className='bg-indigo-500 rounded-md py-2 px-4 font-bold text-white flex justify-center items-center w-full xl:w-[125%]'
                     onClick={handleSubmit}
                 >
                     {loading ? (
@@ -142,11 +143,12 @@ const Explore = () => {
                 </button>
                 <button
                     type='button'
-                    className={`rounded-md py-2 px-4 font-bold text-white flex justify-center items-center ${listening ? 'bg-red-500' : 'bg-green-500'} xl:block hidden`}
+                    className={`ml-[25%] w-[75%] rounded-md py-2 px-4 font-bold text-white flex ${listening ? 'bg-red-500' : 'bg-green-500'} xl:block hidden`}
                     onClick={toggleVoiceInput}
                 >
                     {listening ? "Stop Recording" : <p className='text-center font-medium text-sm '>Start Voice Command (Ask in english)  <i className="fa fa-microphone"></i></p>}
                 </button>
+                </div>
                 <p className='text-gray-400 text-sm font-mono'>HannnAI By M.Raihan Athalah Ilham</p>
             </form>
             <div className='max-w-4xl w-full mx-auto'>
